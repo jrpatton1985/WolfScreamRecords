@@ -1,3 +1,4 @@
 .DS_STORE
 
-assests/raw/*
+# Exclude Original Materials
+/assests/raw/*
