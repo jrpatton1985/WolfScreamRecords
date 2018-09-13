@@ -6,6 +6,7 @@ var closeBtn = d3.select('.close')
                  });
 
 var placeHolder = '../assets/img/handtinytrans.gif';
+var nImg = `<img src="${d.cover}" class="responsive-image" />`;
 var selection = d3.select('.grid')
                   .selectAll('.cell')
                   .data(releaseData)
@@ -13,7 +14,7 @@ var selection = d3.select('.grid')
                   .append('div')
                     .classed('cell', true)
                     .html( d => `
-                        <img src="${placeHolder}" data-src="${d.cover}" class="responsive-image b-lazy">
+                        <img src="${placeHolder}" data-src="${d.cover}" class="lozad responsive-image" />
                       `)
                     .on('click', displayModalBody);
 
@@ -57,3 +58,13 @@ window.onclick = function(event) {
           .style('display', 'none');
     }
 }
+
+// Initialize lozad library
+const obs = lozad('.lozad', {
+      loaded: function(el) {
+          el.src = el.dataset.src;
+          el.onload = function() {
+              el.classList.add('fade');
+          }
+      }
+  }).observe();

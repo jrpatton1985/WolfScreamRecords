@@ -16,6 +16,10 @@
     <link rel="stylesheet" href="../assets/css/styles.css?<?php echo time(); ?>">
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="../assets/img/favicon-32x32.png">
+    <!-- IntersectionObserver polyfill -->
+    <script src="https://cdn.rawgit.com/w3c/IntersectionObserver/master/polyfill/intersection-observer.js"></script>
+    <!-- Lozad JS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
   </head>
   <body>
 
@@ -25,7 +29,7 @@
     <section class="hero">
       <div class="container">
         <h1>Music</h1>
-        <div class="background-image" style="background-image: url(../assets/img/bg_main_bw.png); opacity: 0.25;"></div>
+        <div class="lozad background-image" data-background-image="../assets/img/bg_main_bw.png" style="opacity:0.25;"></div>
         <div class="grid">
         </div>
       </div>
@@ -33,10 +37,7 @@
 
     <footer>
       <p>&copy; Wolf Scream Records <span id="year">&nbsp;</span></a></p>
-      <ul>
-        <li><a href="http://www.facebook.com/wolfscreamrecords/" target="_blank"><i class="fa fa-facebook-square fa-2x"></i></a></li>
-        <li><a href="http://www.instagram.com/wolfscreamrecords/" target="_blank"><i class="fa fa-instagram fa-2x"></i></a></li>
-        <li><a href="https://soundcloud.com/wolf-scream-records/" target="_blank"><i class="fa fa-soundcloud fa-2x"></i></a></li>
+      <ul id="footer-social">
       </ul>
     </footer>
 
@@ -54,15 +55,7 @@
       </div>
     </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/blazy/1.8.2/blazy.min.js"></script>
     <script src="https://d3js.org/d3.v4.js"></script>
-    <script>
-        ;(function() {
-            // Initialize
-            var bLazy = new Blazy();
-            setTimeout(bLazy.revalidate, 100);
-        })();
-    </script>
     <script src="../assets/js/main.js?<?php echo time(); ?>"></script>
     <script src="../assets/js/release.js?<?php echo time(); ?>"></script>
     <script src="../assets/js/buildReleases.js?<?php echo time(); ?>"></script>

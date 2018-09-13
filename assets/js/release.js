@@ -1,5 +1,23 @@
 var releaseData = [
   {
+    "artist": "Aaron Hensley",
+    "title": "Show Lin",
+    "release": "2018-07-20",
+    "catalog": "WRS16",
+    "blurb": "An up and coming Dj/ Producer from Dallas, Aaron Hensley makes his debut on Wolf Scream with a funked up Tech House release. In tribute to the Wu Tang Clan, Aaron mixes in several vox from old Kung Fu flicks, while delivering a pounding groove underneath the vocals. The result is a slow paced tech house workout, packed with decent low end.",
+    "tracks": [
+              {
+                "name":"Show Lin",
+                "mix":"Original Mix"
+              }
+            ],
+    "bp": "show-lin/2321329",
+    "ts": "996901/show-lin",
+    "sc": null,
+    "spotify": "album/3BFsLf1KfOrD4RnRMk0W9I",
+    "cover": "../assets/albums/Show Lin.png"
+  },
+  {
     "artist": "Disco Ball'z",
     "title": "Soul & Underground",
     "release": "2018-07-02",

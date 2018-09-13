@@ -249,24 +249,30 @@ header nav li {
 
 .responsive-image {
   max-width: 100%;
-  transition: 0.3s ease;
   cursor: pointer;
+  transition: 0.3s ease;
+  opacity: 0.9;
 }
 
 .responsive-image:hover,
+.fade:hover,
 .close:hover,
 .close:focus {
   transform: scale(1.1, 1.1);
+  opacity: 1;
 }
 
-.b-lazy.b-loaded {
-  opacity: 0;
-  animation: 2.5s fadeResImg forwards;
+.fade {
+  animation-name: fade;
+  animation-duration: 2s;
 }
 
-@keyframes fadeResImg {
-  100% {
-    opacity: 1;
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.9;
   }
 }
 

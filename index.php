@@ -28,10 +28,8 @@
       <div class="icon-bar">
         <a href="http://www.facebook.com/wolfscreamrecords/" target="_blank"><i class="fa fa-facebook-f"></i></a>
         <a href="http://www.instagram.com/wolfscreamrecords/" target="_blank"><i class="fa fa-instagram"></i></a>
+        <a href="https://twitter.com/Wolf_Scream_Rec" target="_blank"><i class="fa fa-twitter"></i></a>
         <a href="http://www.soundcloud.com/wolf-scream-records/" target="_blank"><i class="fa fa-soundcloud"></i></a>
-        <!-- Activate when created
-        <a href="http://www.twitter.com/wolfscreamrecords" target="_blank"><i class="fa fa-twitter"></i></a>
-        -->
       </div>
 
       <div class="hero-content-area">
@@ -41,10 +39,7 @@
 
     <footer>
       <p>&copy; Wolf Scream Records <span id="year">&nbsp;</span></a></p>
-      <ul>
-        <li><a href="http://www.facebook.com/wolfscreamrecords/" target="_blank"><i class="fa fa-facebook-square fa-2x"></i></a></li>
-        <li><a href="http://www.instagram.com/wolfscreamrecords/" target="_blank"><i class="fa fa-instagram fa-2x"></i></a></li>
-        <li><a href="https://soundcloud.com/wolf-scream-records/" target="_blank"><i class="fa fa-soundcloud fa-2x"></i></a></li>
+      <ul id="footer-social">
       </ul>
     </footer>
 

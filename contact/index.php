@@ -18,9 +18,7 @@
     <link rel="icon" type="image/png" href="../assets/img/favicon-32x32.png">
     <!-- JQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script type="text/javascript" src="../assets/js/form.js">
-
-    </script>
+    <script type="text/javascript" src="../assets/js/form.js"></script>
   </head>
   <body>
 
@@ -62,13 +60,9 @@
 
     <footer>
       <p>&copy; Wolf Scream Records <span id="year">&nbsp;</span></a></p>
-      <ul>
-        <li><a href="http://www.facebook.com/wolfscreamrecords/" target="_blank"><i class="fa fa-facebook-square fa-2x"></i></a></li>
-        <li><a href="http://www.instagram.com/wolfscreamrecords/" target="_blank"><i class="fa fa-instagram fa-2x"></i></a></li>
-        <li><a href="https://soundcloud.com/wolf-scream-records/" target="_blank"><i class="fa fa-soundcloud fa-2x"></i></a></li>
+      <ul id="footer-social">
       </ul>
     </footer>
-
     <script src="../assets/js/main.js?<?php echo time(); ?>"></script>
   </body>
 </html>
